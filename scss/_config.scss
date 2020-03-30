@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+$colors: (
+  primary: #fdcd01,
+  secondary: #000000,
+  text: lighten(#ffd615, 5%)
+);
+
+@function color($color-map) {
+  @return map-get($colors, $color-map);
+}
+
+@mixin responsive($device) {
+  @media (max-width: $device) {
+    @content;
+  }
+}

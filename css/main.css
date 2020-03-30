@@ -1,0 +1,118 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  background-color: #fdcd01;
+  padding: 2rem;
+}
+
+body {
+  background-color: #000000;
+  height: 90vh;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #fcc101;
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+header ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  width: 100%;
+  margin: 0 10px;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  margin: 0 5px;
+  padding: 15px 3rem;
+  background-color: #000000;
+  text-align: center;
+}
+
+header ul li:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+header ul li a {
+  color: #ffda2f;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+main article {
+  color: #ffda2f;
+  position: relative;
+}
+
+main article h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.2ch;
+  margin-bottom: 2rem;
+}
+
+main article p {
+  line-height: 4ch;
+  text-align: justify;
+}
+
+main article a {
+  position: absolute;
+  right: 0;
+  padding: 1rem 4rem;
+  background-color: #fdcd01;
+  color: #000000;
+}
+
+main article a:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=main.css.map */
